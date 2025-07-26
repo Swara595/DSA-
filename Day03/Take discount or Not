@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt();
+
+        while (t-- > 0) {
+            int n = scanner.nextInt();
+            int x = scanner.nextInt();
+            int y = scanner.nextInt();
+            int[] a = new int[n];
+
+            for (int i = 0; i < n; i++) {
+                a[i] = scanner.nextInt();
+            }
+            //without coupon
+            int withoutC=0;
+            for(int i=0;i<n;i++){
+                withoutC+=a[i];
+            }
+            //with coupon
+            int withC=0;
+            for(int i=0;i<n;i++){
+                if(a[i]<=y){
+                    
+                }else{
+                    withC+=(a[i]-y);
+                    
+                }
+            }
+             
+            int total=x+withC;
+            if(total<withoutC){
+                System.out.println("COUPON");
+            }else{
+                System.out.println("NO COUPON");
+            }
+        }
+    }
+}
