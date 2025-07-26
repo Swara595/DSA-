@@ -31,4 +31,11 @@ Count how many elements are greater than M.
 These are the elements that need to be changed to M to make M the maximum value.
 Print the count (minimum number of operations) for each test case.
 
+# Day 6: Running Comparison
+CodeChef Problem Link: https://www.codechef.com/practice/course/arrays/ARRAYS/problems/RUNCOMPARE
+## Approach/Logic:
+The goal is to find the number of days where both Alice and Bob are happy with their running distances. For each day, with Alice running Ai meters and Bob running Bi meters.
+Alice is happy if Bi≤2×Ai. Bob is happy if Ai≤2×Bi. We simply iterate through each day, check if both of these conditions are true, and increment a counter if they are. Finally, we print the total count for each test case.
+
+
 
