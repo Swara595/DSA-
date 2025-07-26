@@ -42,5 +42,10 @@ CodeChef Problem Link: https://www.codechef.com/practice/course/arrays/ARRAYS/pr
 ## Approach/Logic:
 Set `max` to the first array element and `smax` (second maximum) to `0`. Iterate through the array to find and store the largest element in `max`. Iterate through the array again. If an element is greater than `smax` and not equal to `max`, update `smax` with that element. This ensures `smax` is the second largest *distinct* value. The result is `max + smax`.
 
+# Day 8: Difficulty Rating Order
+CodeChef Problem Link: https://www.codechef.com/practice/course/arrays/ARRAYS/problems/RATINGINPRAC
+## Approach/Logic:
+Set `flag` to `1` (assuming "Yes"). Use a nested loop to compare every element `d[i]` with every subsequent element `d[j]` (where `j > i`). If `d[i] > d[j]` is found at any point, it means the order is decreasing. Set `flag = 0` and `break` out of the inner loop immediately. Print "Yes" if `flag` is `1`, otherwise print "No`.
+
 
 
