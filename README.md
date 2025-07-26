@@ -15,4 +15,10 @@ CodeChef Problem Link: https://www.codechef.com/practice/course/arrays/ARRAYS/pr
 ## Approach/Logic: 
 First find the total price of the items without coupon. Apply the discount on each item: If item price > Y → new price = price - Y . If item price ≤ Y → new price = 0. Add the coupon cost (X) to the total discounted cost. Compare: If discounted cost + X < original cost → print "COUPON", Else → print "NO COUPON"
 
+# Day 4: Cost of Groceries
+CodeChef Problem Link: https://www.codechef.com/practice/course/arrays/ARRAYS/problems/KITCHENCOST?tab=statement
+## Approach/Logic:
+For each test case, read the number of items n and freshness threshold x. Read two arrays: a[] → freshness values and b[] → corresponding costs. Loop through the arrays:
+If a[i] >= x, add b[i] to total cost. Print the total cost for each test case.
+
 
