@@ -37,5 +37,10 @@ CodeChef Problem Link: https://www.codechef.com/practice/course/arrays/ARRAYS/pr
 The goal is to find the number of days where both Alice and Bob are happy with their running distances. For each day, with Alice running Ai meters and Bob running Bi meters.
 Alice is happy if Bi≤2×Ai. Bob is happy if Ai≤2×Bi. We simply iterate through each day, check if both of these conditions are true, and increment a counter if they are. Finally, we print the total count for each test case.
 
+# Day 7: Largest and second largest
+CodeChef Problem Link: https://www.codechef.com/practice/course/arrays/ARRAYS/problems/LARGESECOND
+## Approach/Logic:
+Set `max` to the first array element and `smax` (second maximum) to `0`. Iterate through the array to find and store the largest element in `max`. Iterate through the array again. If an element is greater than `smax` and not equal to `max`, update `smax` with that element. This ensures `smax` is the second largest *distinct* value. The result is `max + smax`.
+
 
 
