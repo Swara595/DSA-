@@ -21,4 +21,14 @@ CodeChef Problem Link: https://www.codechef.com/practice/course/arrays/ARRAYS/pr
 For each test case, read the number of items n and freshness threshold x. Read two arrays: a[] → freshness values and b[] → corresponding costs. Loop through the arrays:
 If a[i] >= x, add b[i] to total cost. Print the total cost for each test case.
 
+# Day 5: Min to Max
+CodeChef Problem Link: https://www.codechef.com/practice/course/arrays/ARRAYS/problems/OPMIN?tab=statement
+## Approach/Logic:
+For each test case:
+Read the array size n and elements of array a[].
+Find the minimum value M in the array.
+Count how many elements are greater than M.
+These are the elements that need to be changed to M to make M the maximum value.
+Print the count (minimum number of operations) for each test case.
+
 
