@@ -10,4 +10,9 @@ CodeChef Problem Link: https://www.codechef.com/practice/course/arrays/ARRAYS/pr
 ## Approach/Logic: 
 First consider the maximum element of the array to be the element present at the 0th index.i.e int max=arr[0]. Using for loop, traverse the array and if any element is greater than max, then assign the value of that element to max and outside the loop print its value.i.e.the value of max variable
 
+# Day 3: Take discount or Not
+CodeChef Problem Link: https://www.codechef.com/practice/course/arrays/ARRAYS/problems/DISCOUNTT?tab=statement
+## Approach/Logic: 
+First find the total price of the items without coupon. Apply the discount on each item: If item price > Y → new price = price - Y . If item price ≤ Y → new price = 0. Add the coupon cost (X) to the total discounted cost. Compare: If discounted cost + X < original cost → print "COUPON", Else → print "NO COUPON"
+
 
